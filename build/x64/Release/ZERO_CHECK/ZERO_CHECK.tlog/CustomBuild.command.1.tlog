@@ -1,0 +1,10 @@
+^E:\CEF\PROJECT\BUILD\CMAKEFILES\F5A7F5B24C1B2C4064E3E82E03489533\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/CEF/project -BE:/CEF/project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/CEF/project/build/cef.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

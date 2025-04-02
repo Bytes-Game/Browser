@@ -1,7 +1,34 @@
-.vs/
+# Ignore build artifacts
+out/
 build/
-*.vsconfig
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.pdb
+*.lib
+*.dll
+*.so
+*.a
+*.dylib
+*.exp
+*.ilk
+*.log
+
+# Ignore user-specific and temporary files
 *.user
-*.userosscache
 *.suo
+*.ncb
+*.sdf
+*.ipch
+*.vs/
+.vscode/
+*.swp
+*.bak
+.DS_Store
+*.vsconfig
+*.userosscache
 *.userprefs
+
+# Ignore dependency and third-party binaries
+cef_binary_*/
